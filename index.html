@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooch Care</title>
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- slick -->
+
+    <link rel="stylesheet" href="./lib/slick/slick.css" />
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css">
+
+    <!-- fancybox -->
+
+    <link rel="stylesheet" href="./lib/fancybox/jquery.fancybox.min.css"/>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/darkmode.css"/>
+    <link rel="stylesheet" href="./css/responsive.css"/>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="grid">
+            <div class="section__container">
+                <nav class="nav__bar">
+                    <div class="nav__brand">
+                        <h1 class="nav__brand-name">
+                            <a href="" class="nav__brand-link">Pooch Care</a>
+                        </h1>
+                    </div>
+                    <div class="nav__bar-list">
+                        <ul>
+                           <li class="nav__item">
+                               <a href="#url" class="nav__item-link">Home</a>
+                           </li>
+                           <li class="nav__item">
+                            <a href="#url" class="nav__item-link">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#url" class="nav__item-link">Services</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#url" class="nav__item-link">Gallery</a>
+                            </li>
+                            <li class="nav__item nav__item-has-sub-nav">
+                                <a href="#url" class="nav__item-link">
+                                    Blog
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <div class="nav__sub-nav">
+                                    <div class="nav__sub-nav-content">
+                                        <ul>
+                                            <li class="sub__nav-item">
+                                                <a href="#url" class="sub__nav-item-link">Blog Posts</a>
+                                            </li>
+                                            <li class="sub__nav-item">
+                                                <a href="#url" class="sub__nav-item-link">Blog Single</a>
+                                            </li>
+                                            <li class="sub__nav-item">
+                                                <a href="#url" class="sub__nav-item-link">Landing Page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#url" class="nav__item-link">Contact</a>
+                            </li>
+                            <li class="nav__item">
+                            </li>
+                        </ul>
+                        <div>
+                            <button class="mybtn mybtn--dark-light">
+                                <i class="far fa-sun" id="iconLight"></i>
+                                <i class="far fa-moon" id="iconDark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- carousel -->
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel__content">
+                <div class="carousel__item">
+                    <div class="carousel__item-content">
+                        <img src="./images/banner1.jpg" class="carousel__item-img" alt="slider"/>
+                        <div class="carousel__item-info">
+                            <div class="grid">
+                                <div class="carousel__item-info-wrapper">
+                                    <h1 class="carousel__item-titel">
+                                        Quality Things for Loving Pets
+                                    </h1>
+                                    <p class="carousel__item-description">
+                                        We Help Your Projects
+                                    </p>
+                                    <div class="carousel__item-info-btn">
+                                        <a href="#url" class="mybtn mybtn-primary mybtn-primary--white">
+                                            Read More
+                                        </a>
+                                        <a href="#url" class="mybtn mybtn-primary mybtn-primary--transparent">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__item-modal"></div>
+                    </div>
+                </div>
+                <div class="carousel__item carousel__item--2">
+                    <div class="carousel__item-content">
+                        <img src="./images/banner2.jpg" class="carousel__item-img" alt="slider"/>
+                        <div class="carousel__item-info">
+                            <div class="grid">
+                                <div class="carousel__item-info-wrapper">
+                                    <h1 class="carousel__item-titel">
+                                        Quality Things for Loving Pets
+                                    </h1>
+                                    <p class="carousel__item-description">
+                                        We Help Your Projects
+                                    </p>
+                                    <div class="carousel__item-info-btn">
+                                        <button class="mybtn mybtn-primary mybtn-primary--white">
+                                            Read More
+                                        </button>
+                                        <button class="mybtn mybtn-primary mybtn-primary--transparent">
+                                            Contact Us
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__item-modal"></div>
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <div class="carousel__item-content">
+                        <img src="./images/banner3.jpg" class="carousel__item-img" alt="slider"/>
+                        <div class="carousel__item-info">
+                            <div class="grid">
+                                <div class="carousel__item-info-wrapper">
+                                    <h1 class="carousel__item-titel">
+                                        Quality Things for Loving Pets
+                                    </h1>
+                                    <p class="carousel__item-description">
+                                        We Help Your Projects
+                                    </p>
+                                    <div class="carousel__item-info-btn">
+                                        <button class="mybtn mybtn-primary mybtn-primary--white">
+                                            Read More
+                                        </button>
+                                        <button class="mybtn mybtn-primary mybtn-primary--transparent">
+                                            Contact Us
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__item-modal"></div>
+                    </div>
+                </div>
+                <div class="carousel__item  carousel__item--4">
+                    <div class="carousel__item-content">
+                        <img src="./images/banner4.jpg" class="carousel__item-img" alt="slider"/>
+                        <div class="carousel__item-info">
+                            <div class="grid">
+                                <div class="carousel__item-info-wrapper">
+                                    <h1 class="carousel__item-titel">
+                                        Quality Things for Loving Pets
+                                    </h1>
+                                    <p class="carousel__item-description">
+                                        We Help Your Projects
+                                    </p>
+                                    <div class="carousel__item-info-btn">
+                                        <button class="mybtn mybtn-primary mybtn-primary--white">
+                                            Read More
+                                        </button>
+                                        <button class="mybtn mybtn-primary mybtn-primary--transparent">
+                                            Contact Us
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__item-modal"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- About -->
+
+    <section class="about section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="section__heading">
+                    <h1 class="section__sub-title">
+                        ABOUT US
+                    </h1>
+                    <h1 class="section__title">
+                        We love Your Pets Like They Are Our Own
+                    </h1>
+                    <p class="section__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Consequuntur hic odio voluptatem tenetur consequatur. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et 
+                        ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, 
+                        ut rhoncus turpis sodales quis. 
+                    </p>
+                </div>
+                <div class="about__btn">
+                    <a href="#url" class="mybtn mybtn-primary mybtn-primary--readmore">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+
+    <section class="service section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="service__list">
+                    <div class="service__item">
+                        <div class="service__item-content">
+                            <i class="fa fa-snowflake service__item-icon"></i>
+                            <h1 class="service__item-title">
+                                <a href="#url">
+                                    Dog Walking
+                                </a>
+                            </h1>
+                            <p class="section__description service__item-desc">
+                                Vivamus a ligula quam. Ut blandit eu leo non. 
+                                Duis sed doloramet laoreet. Lorem ipsum dolor 
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a href="#url" class="mybtn mybtn-primary mybtn-primary--readmore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-content">
+                            <i class="fa fa-utensils service__item-icon"></i>
+                            <h1 class="service__item-title">
+                                <a href="#url">
+                                    Healthy Meals
+                                </a>
+                            </h1>
+                            <p class="section__description service__item-desc">
+                                Vivamus a ligula quam. Ut blandit eu leo non. 
+                                Duis sed doloramet laoreet. Lorem ipsum dolor 
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a href="#url" class="mybtn mybtn-primary mybtn-primary--readmore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-content">
+                            <i class="fa fa-sign-language service__item-icon"></i>
+                            <h1 class="service__item-title">
+                                <a href="#url">
+                                    Pet Sitting
+                                </a>
+                            </h1>
+                            <p class="section__description service__item-desc">
+                                Vivamus a ligula quam. Ut blandit eu leo non. 
+                                Duis sed doloramet laoreet. Lorem ipsum dolor 
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a href="#url" class="mybtn mybtn-primary mybtn-primary--readmore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-content">
+                            <i class="fa fa-sitemap service__item-icon"></i>
+                            <h1 class="service__item-title">
+                                <a href="#url">
+                                    Dog Activities
+                                </a>
+                            </h1>
+                            <p class="section__description service__item-desc">
+                                Vivamus a ligula quam. Ut blandit eu leo non. 
+                                Duis sed doloramet laoreet. Lorem ipsum dolor 
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a href="#url" class="mybtn mybtn-primary mybtn-primary--readmore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-content">
+                            <i class="fa fa-shower service__item-icon"></i>
+                            <h1 class="service__item-title">
+                                <a href="#url">
+                                    Pet Daycare
+                                </a>
+                            </h1>
+                            <p class="section__description service__item-desc">
+                                Vivamus a ligula quam. Ut blandit eu leo non. 
+                                Duis sed doloramet laoreet. Lorem ipsum dolor 
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a href="#url" class="mybtn mybtn-primary mybtn-primary--readmore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__item-content">
+                            <i class="fa fa-user-md service__item-icon"></i>
+                            <h1 class="service__item-title">
+                                <a href="#url">
+                                    Pet Grooming
+                                </a>
+                            </h1>
+                            <p class="section__description service__item-desc">
+                                Vivamus a ligula quam. Ut blandit eu leo non. 
+                                Duis sed doloramet laoreet. Lorem ipsum dolor 
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a href="#url" class="mybtn mybtn-primary mybtn-primary--readmore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- offer -->
+
+    <section class="offer section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="offer__list">
+                    <div class="offer__item">
+                        <div class="offer__item-content">
+                            <img src="./images/ab.jpg" class="offer__item-img" alt="pooch care"/>
+                        </div>
+                    </div>
+                    <div class="offer__item">
+                        <div class="offer__item-content">
+                            <div class="section__heading">
+                                <h1 class="section__sub-title">WHY CHOOSE US</h1>
+                                <h1 class="section__title">What We Offer For You</h1>
+                                <p class="section__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicingelit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicingelit.
+                                </p>
+                            </div>
+                            <div class="offer__item-list">
+                                <div class="offer__item-list-item">
+                                    <div class="offer__item-icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="offer__item-desc">
+                                        Certified Groomer
+                                    </p>
+                                </div>
+                                <div class="offer__item-list-item">
+                                    <div class="offer__item-icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="offer__item-desc">
+                                        10 Years of Experience
+                                    </p>
+                                </div>
+                                <div class="offer__item-list-item">
+                                    <div class="offer__item-icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="offer__item-desc">
+                                        Pet Lover
+                                    </p>
+                                </div>
+                                <div class="offer__item-list-item">
+                                    <div class="offer__item-icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="offer__item-desc">
+                                        Customer Supports
+                                    </p>
+                                </div>
+                                <div class="offer__item-list-item">
+                                    <div class="offer__item-icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="offer__item-desc">
+                                        Veterinary Help
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statitics -->
+
+    <section class="statitic section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="statitic__list">
+                    <div class="statitic__item">
+                        <div class="statitic__item-content">
+                            <p class="statitic__item-number counter">730</p>
+                            <p class="statitic__item-info">Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="statitic__item">
+                        <div class="statitic__item-content">
+                            <p class="statitic__item-number counter">80</p>
+                            <p class="statitic__item-info">Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="statitic__item">
+                        <div class="statitic__item-content">
+                            <p class="statitic__item-number counter">812</p>
+                            <p class="statitic__item-info">Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="statitic__item">
+                        <div class="statitic__item-content">
+                            <p class="statitic__item-number counter">90</p>
+                            <p class="statitic__item-info">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan -->
+
+    <section class="plan section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="section__heading">
+                    <h1 class="section__sub-title">
+                        Our Plans
+                    </h1>
+                    <h1 class="section__title">
+                        Affordable Packages
+                    </h1>
+                </div>
+
+                <div class="plan__list">
+                    <div class="plan__item">
+                        <div class="plan__item-content">
+                            <div class="plan__item-head">
+                                <h1 class="plan__item-title">Free Package</h1>
+                                <div class="plan__item-price">
+                                    <p>$</p>
+                                    <p>
+                                        <span>0</span>
+                                        /month
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan__item-body">
+                                <p class="plan__item-desc">5 Dog Walk</p>
+                                <p class="plan__item-desc">3 Vet Visit</p>
+                                <p class="plan__item-desc">3 Pet Spa</p>
+                                <p class="plan__item-desc">Free Supports</p>
+                                <p class="plan__item-desc">Customer Support</p>
+                                <a href="#url" class="mybtn mybtn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan__item plan__item--2">
+                        <div class="plan__item-content">
+                            <div class="plan__item-head">
+                                <div class="plan__item-sale">
+                                    <p>SAVE 10%</p>
+                                </div>
+                                <h1 class="plan__item-title">Standard Package</h1>
+                                <div class="plan__item-price">
+                                    <p>$</p>
+                                    <p>
+                                        <span>39</span>
+                                        /month
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan__item-body">
+                                <p class="plan__item-desc">5 Dog Walk</p>
+                                <p class="plan__item-desc">3 Vet Visit</p>
+                                <p class="plan__item-desc">3 Pet Spa</p>
+                                <p class="plan__item-desc">Free Supports</p>
+                                <p class="plan__item-desc">Customer Support</p>
+                                <a href="#url" class="mybtn mybtn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan__item">
+                        <div class="plan__item-content">
+                            <div class="plan__item-head">
+                                <h1 class="plan__item-title">Pro Package</h1>
+                                <div class="plan__item-price">
+                                    <p>$</p>
+                                    <p>
+                                        <span>89</span>
+                                        /month
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan__item-body">
+                                <p class="plan__item-desc">5 Dog Walk</p>
+                                <p class="plan__item-desc">3 Vet Visit</p>
+                                <p class="plan__item-desc">3 Pet Spa</p>
+                                <p class="plan__item-desc">Free Supports</p>
+                                <p class="plan__item-desc">Customer Support</p>
+                                <a href="#url" class="mybtn mybtn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- video -->
+
+    <section class="video section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="section__heading">
+                    <h1 class="section__sub-title">
+                        BETTER PET NUTRITION.
+                    </h1>
+                    <h1 class="section__title">
+                        The Finest Fresh Food And All Your Pet Needs.
+                    </h1>
+                    <p class="section__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet elit consec tetur adipisi elit. 
+                        Lorem ipsum dolor sit amet elit consec tetur adipisi elit. 
+                        Iure voluptatibus explicabo officia.
+                    </p>
+                </div>
+                <div class="video__video">
+                    <img src="./images/banner2.jpg" alt="pooch care" class="video__img"/>
+                    <div class="video__play-btn">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=d44UTUSTYKU" data-width="800" data-height="400" class="mybtn mybtn-primary">
+                            <i class="fas fa-play"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feedback -->
+
+    <section class="feedback section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="feedback__list">
+                    <div class="feedback__item">
+                        <div class="feedback__item-content">
+                            <p class="feedback__item-comment">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolor sit amet!.
+                            </p>
+                            <div class="feedback__item-customer">
+                                <img src="./images/f1.jpg" alt="humans" class="feedback__item-img"/>
+                                <div class="feedback__item-customer-info">
+                                    <p class="feedback__item-customer-name">John Wilson</p>
+                                    <p class="feedback__item-customer-location">Viet Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-content">
+                            <p class="feedback__item-comment">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolor sit amet!.
+                            </p>
+                            <div class="feedback__item-customer">
+                                <img src="./images/f2.jpg" alt="humans" class="feedback__item-img"/>
+                                <div class="feedback__item-customer-info">
+                                    <p class="feedback__item-customer-name">John Wilson</p>
+                                    <p class="feedback__item-customer-location">Viet Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-content">
+                            <p class="feedback__item-comment">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolor sit amet!.
+                            </p>
+                            <div class="feedback__item-customer">
+                                <img src="./images/f3.jpg" alt="humans" class="feedback__item-img"/>
+                                <div class="feedback__item-customer-info">
+                                    <p class="feedback__item-customer-name">John Wilson</p>
+                                    <p class="feedback__item-customer-location">Viet Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-content">
+                            <p class="feedback__item-comment">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolor sit amet!.
+                            </p>
+                            <div class="feedback__item-customer">
+                                <img src="./images/f4.jpg" alt="humans" class="feedback__item-img"/>
+                                <div class="feedback__item-customer-info">
+                                    <p class="feedback__item-customer-name">John Wilson</p>
+                                    <p class="feedback__item-customer-location">Viet Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-content">
+                            <p class="feedback__item-comment">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolor sit amet!.
+                            </p>
+                            <div class="feedback__item-customer">
+                                <img src="./images/f2.jpg" alt="humans" class="feedback__item-img"/>
+                                <div class="feedback__item-customer-info">
+                                    <p class="feedback__item-customer-name">John Wilson</p>
+                                    <p class="feedback__item-customer-location">Viet Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-content">
+                            <p class="feedback__item-comment">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                Dolores molestias adipisci dolor sit amet!.
+                            </p>
+                            <div class="feedback__item-customer">
+                                <img src="./images/f3.jpg" alt="humans" class="feedback__item-img"/>
+                                <div class="feedback__item-customer-info">
+                                    <p class="feedback__item-customer-name">John Wilson</p>
+                                    <p class="feedback__item-customer-location">Viet Nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- subcribe -->
+
+    <section class="subcribe section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="section__heading">
+                    <h1 class="section__title">Stay Updated!</h1>
+                    <p class="section__description">
+                        Vestibulum ante ipsum primis in faucibus orci 
+                        luctus et ultrices posuere cubilia Curae; 
+                        Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. 
+                        Integer sit amet mattis quam.
+                    </p>
+                </div>
+                <form action="#" class="subcribe__form">
+                    <input type="text" name="email" placeholder="Enter your email..." class="subcribe__form-input"/>
+                    <button type="submit" class="mybtn mybtn-primary">Subcribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="footer section__main">
+        <div class="grid">
+            <div class="section__container">
+                <div class="footer__list">
+                    <div class="footer__item footer__item--1">
+                        <div class="footer__item-content">
+                            <p class="fooeter__item-title">Contact information</p>
+                            <div class="footer__item-info">
+                                <p class="footer__item-desc">
+                                    <span>Address</span>
+                                    : #135 block, Barnard St. Brooklyn, London 10036, UK
+                                </p>
+                                <p class="footer__item-desc">
+                                    <span>Phone</span>
+                                    <a href="tel: +84976283273"> : 0976283273</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <span>Email</span>
+                                    <a href="mailto:viethai1309@gmail.com"> : viethai1309@gmail.com</a>
+                                </p>
+                                <div class="footer__item-social">
+                                    <a href="#url">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#url">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#url">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="#url">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-content">
+                            <p class="fooeter__item-title">Company</p>
+                            <div class="footer__item-info">
+                                <p class="footer__item-desc">
+                                    <a href="#url">About Us</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Blog Posts</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Services</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Pricing</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-content">
+                            <p class="fooeter__item-title">Quick Links</p>
+                            <div class="footer__item-info">
+                                <p class="footer__item-desc">
+                                    <a href="#url">Contact Us</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Create account</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Care Center</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Site Feedack</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-content">
+                            <p class="fooeter__item-title">Support</p>
+                            <div class="footer__item-info">
+                                <p class="footer__item-desc">
+                                    <a href="#url">All Dogs</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Care Advices</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Care Support</a>
+                                </p>
+                                <p class="footer__item-desc">
+                                    <a href="#url">Veterinary Help</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- coppy right -->
+
+    <section class="coppyright">
+        <div class="grid">
+            <div class="section__container">
+                <p>
+                    © 2020 Pooch Care. All Rights Reserved. Design by 
+                    <a href="#url">W3Layouts</a> 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- slick -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous">
+    </script>
+
+    <!-- count up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./lib/countup/jquery.countup.min.js"></script>
+
+    <!-- fancy box -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="./lib/fancybox/jquery.fancybox.min.js"></script>
+
+
+    <script src="./lib/slick/slick.min.js"></script>
+    <script>
+         // carousel
+
+         $(document).ready(function () {
+            $('.carousel__content').slick({
+                arrows:false,
+                dots:true,
+                speed:1000,
+                autoplay:false,
+                autoplaySpeed: 3000,
+            });
+        });
+
+        // feedback
+
+        $(document).ready(function () {
+            $('.feedback__list').slick({
+                arrows:false,
+                dots:true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+               
+                ]
+            });
+        });
+    </script>
+
+    <script>
+        // countup
+
+        $('.counter').countUp();
+        $('.counter').countUp({
+            'time': 500,
+            'delay': 1
+        });
+
+    </script>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
